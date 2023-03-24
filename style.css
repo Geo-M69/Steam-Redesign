@@ -1,0 +1,146 @@
+:root {
+    --taskbarBackgroundColor: #171a21;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: var(--taskbarBackgroundColor);
+}
+
+.navigation-bar {
+    display: flex;
+    width: 100vw;
+    height: 10vh;
+    position: fixed;
+    top: 0;
+}
+
+.nav-bar {
+    display: flex;
+    width: 100vw;
+    height: 10vh;
+}
+
+.steam-logo {
+    display: flex;
+    width: 35vw;
+    height: 10vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.steam-logo img {
+    max-width: 100%;
+    max-height: 50%;
+}
+
+.nav-menu {
+    display: flex;
+    width: 65vw;
+    height: 10vh;
+    align-items: center;
+    justify-content: end;
+    margin-right: 1rem;
+}
+
+.nav-menu img {
+    width: 7vw;
+    height: 10vh;
+}
+
+.featured {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 45vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.featured img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.cyberpunk-title {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+.search-bar {
+    display: flex;
+    width: 100vw;
+    height: 10vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.surronding-rectangle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: 2px solid #767676;
+    border-radius: 10px;
+}
+
+.search-icon {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+#search-input {
+    width: 80vw;
+    height: 5vh;
+    background-color: transparent;
+    border: none;
+    color: white;
+}
+
+#search-input:focus {
+  outline: none;
+  box-shadow: none;
+  border-color: transparent;
+}
+
+.specials {
+    display: flex;
+    width: 100vw;
+    height: 30vh;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.specials-grid {
+    display: grid;
+    grid-template-areas: 
+    "Genres     Tags"
+    "Specials   Free";
+    width: 80vw;
+}
+
+.genres-square {
+    display: flex;
+    grid-area: "Genres";
+
+}
+
+.tags-square {
+    display: flex;
+    grid-area: "Tags";
+}
+
+.specials-square {
+    display: flex;
+    grid-area: "Specials";
+}
+
+.free-square {
+    display: flex;
+    grid-area: "Free";
+}
